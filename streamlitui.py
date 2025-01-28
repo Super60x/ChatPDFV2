@@ -8,7 +8,6 @@ import logging
 # Set page configuration at the start
 st.set_page_config(page_title="PDF Chat", layout="wide")
 
-from streamlit_chat import message
 from pdfquery import PDFQuery
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
