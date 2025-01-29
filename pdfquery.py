@@ -37,7 +37,7 @@ class PDFQuery:
             openai_api_key=openai_api_key,
             presence_penalty=-1.0,
             frequency_penalty=-1.0,
-            max_tokens=4000
+            max_tokens=8000
         )
         
         template = """Je bent een nauwkeurige assistent die alleen antwoord geeft op basis van de gegeven context.
@@ -52,6 +52,7 @@ class PDFQuery:
         7. Als er meerdere relevante stukken informatie zijn, combineer deze in je antwoord
         8. Geef aan als je informatie uit verschillende delen van het document combineert
         9. Als je een deel van de tekst letterlijk citeert, gebruik dan aanhalingstekens
+        10. De samenvatting mag best lang zijn.
         
         Context: {context}
         
