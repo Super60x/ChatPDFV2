@@ -7,17 +7,19 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.Python
 venv/
 .venv/
 
 # IDE
-.vscode/
 .idea/
+.vscode/
 
 # Sensitive files
 *.key
 *.pem
 *.secret
+*.log
 
 # Database files
 chroma_db/

@@ -96,7 +96,8 @@ class PDFQuery:
 
             except Exception as e:
                 logging.error(f"Error during question processing: {str(e)}", exc_info=True)
-                if "OpenAI API" in str(e):
+                from openai import OpenAIError
+                if isinstance(e, OpenAIError):
                     raise ValueError("OpenAI API error occurred")
                 raise
 
